@@ -1,0 +1,214 @@
+/* 
+Single line or multi line comment 
+
+*/
+
+/* =================================
+   Syntax 
+   ================================= */
+/*
+  selector {
+     property : value;
+ } 
+ 
+ */
+
+
+/* =================================
+   Universal 
+   ================================= */
+
+/* * {
+    color: gray;
+    font-size: 14px;
+    background-color: chocolate;
+}  */
+
+/* .uni-sel  * {
+    background-color: burlywood;
+} */
+
+
+/* =================================
+   Type / Element selector
+   ================================= */
+h4 {
+    color: darkblue;
+}
+
+
+/* =================================
+   ID selector
+   ================================= */
+
+#type-sel {
+    color: brown;
+}
+
+/* [id="type-sel"] {
+    color: brown;
+} */
+
+#span-1 {
+    color: yellow;
+}
+
+
+
+/* =================================
+   Class selector
+   ================================= */
+
+.my-code {
+    color: chocolate;
+}
+
+/* [class="my-code"] {
+    color: brown;
+} */
+
+.my-code-fs-25 {
+    font-size: 25px;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+/* =================================
+   Attribute selection
+   ================================= */
+
+
+a[href*="internal"] {
+    color: red;
+}
+
+a[name*="sai"] {
+    color: green;
+}
+
+/* a[href^="#"] {
+    color: yellow;
+} */
+
+a[href$="abc"] {
+    color: pink;
+}
+
+
+/* ====================================
+ apply style only when below two classes available in element 
+  =====================================*/
+.my-code.bg-yellow {
+    font-size: 30px;
+}
+
+/* =================================
+    Descendant 'space' ,  apply styles to childres  elements 
+ ==================================*/
+.special-div span {
+    background-color: blueviolet;
+}
+
+/* =================================
+   Grouping ',' 
+   ================================= */
+
+/* h1,
+div,
+p {
+    background-color: green;
+} */
+
+
+h1 {
+    font-size: 50px;
+    font-family: 'Macondo', 'Roboto', sans-serif;
+    ;
+}
+
+div {
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px;
+}
+
+/* =================================
+   Direct children  '>'
+   ================================= */
+.my-dc>p {
+    color: blue;
+    background-color: lightyellow;
+}
+
+
+/* =================================
+   Adjacent siblings '+'
+   ================================= */
+h2+div {
+    background-color: yellow;
+}
+
+a+.box {
+    background-color: greenyellow;
+}
+
+/* =================================
+   General siblings '~'
+   ================================= */
+
+h2~.box-gen {
+    background-color: lightblue;
+}
+
+a~.box-gen {
+    background-color: gold;
+}
+
+/* =================================
+   Sudo Classes 
+   
+   hover, 
+   checked, 
+   active,
+   first,
+   first-child,
+   not(),
+   nth-child(),
+   nth-of-type(),
+   ================================= */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: lightblue;
+    /* font-size: 25px; */
+}
+
+.special-div p:first-child {
+    font-size: 120%;
+    font-weight: bold;
+    background-color: yellowgreen;
+    color: red;
+}
+
+/* =================================
+   Sudo Elements 
+   
+   after,
+   before
+   ================================= */
+
+a[href^="#"]::before {
+    content: ' click on : ';
+}
+
+a[href^="#"]::after {
+    content: '.';
+}

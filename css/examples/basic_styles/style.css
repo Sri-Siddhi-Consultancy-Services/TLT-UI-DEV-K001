@@ -1,0 +1,47 @@
+h1 {
+    color: red;
+    background-color: yellow;
+}
+
+/* p {
+    color:yellow;
+    background-color: cornflowerblue;
+}
+
+#p2 {
+    color:blue;
+    background-color: yellow;
+} */
+
+.para {
+    color: blue;
+    background-color: aqua;
+}
+
+/* ======================
+    Units
+    px,
+    pt,
+    em,
+    rem,
+    cm,
+    in,...etc.
+======================= */
+
+
+/* ======================
+    Colors
+    Named  colors,
+    Hexadecimal color codes,
+    RGA, RGBA
+======================= */
+
+
+/* ======================
+    Margins & Padding
+======================= */
+
+
+/* ======================
+    Borders
+======================= */

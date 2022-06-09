@@ -1,0 +1,56 @@
+h1 {
+    background-color: blueviolet;
+}
+
+h2 {
+    display: none;
+    background-color: green;
+}
+
+.container {
+    width: 90%;
+    height: 300px;
+    background-color: #2b2d42;
+    border: 2px solid #d90429;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container div {
+    flex-basis: 50px;
+    width: 30px;
+    height: 30px;
+    flex-grow: 1;
+}
+
+/* @media (width:500px) {
+    #main-header {
+        background-color: red;
+        display: none;
+    }
+
+    h2 {
+        display: block;
+        background-color: red;
+    }
+} */
+
+@media (min-width:500px) and (max-width:700px) {
+    #main-header {
+        display: none;
+    }
+
+    h2 {
+        display: block;
+
+    }
+}
+
+@media (min-width:500px) and (max-width:600px) {
+
+    h2 {
+        background-color: red;
+
+    }
+}

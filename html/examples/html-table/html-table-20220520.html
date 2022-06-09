@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        table {
+            /* border-style: ridge;
+        border-width: 2px;
+        border-color: #8ebf42; */
+            /* background-color: yellow;
+            color: red; */
+
+        }
+
+        /* tr {
+            background-color: magenta;
+            color: white;
+        } */
+
+        th {
+            border: 1px solid red;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="background-color:gold ; color: red;">HTML Table</h1>
+
+    <!-- this is basic about student and colleges table start -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Specilization</th>
+                <th>Subjects</th>
+                <th>College</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Nandini</td>
+                <td>Bsc</td>
+                <td>Maths, Physics, Computers </td>
+                <td>abc college</td>
+
+            </tr>
+            <tr>
+                <td rowspan="4">Murali</td>
+                <td>BSc</td>
+                <td>Maths, Physics, Computers </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+
+                <td>BSc</td>
+                <td>Maths, Physics, Computers</td>
+            </tr>
+            <tr>
+                <td>BSc</td>
+                <td>Maths, Physics, Computers</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+
+                    Maths, Physics, Computers
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+    <!-- this is basic table end -->
+</body>
+
+</html>

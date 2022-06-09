@@ -1,0 +1,57 @@
+/* Box Model,  */
+
+/* ===========================
+    Colors :
+    Named,
+    hexadecimals,
+    RGB,
+    RGBA,
+=========================== */
+.color-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.box1 {
+
+    /* background-color: red; */
+    /* background-color: #ff0000; */
+    /* background-color: rgb(255, 0, 0); */
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.box2 {
+
+    background-color: green;
+}
+
+.box3 {
+
+    background-color: blue;
+}
+
+
+
+/* ===========================
+    Units : 
+    px,
+    pt,
+    cm,
+    in,
+    em,
+    rem,
+=========================== */
+
+.box4 {
+    width: 50px;
+}
+
+.box5 {
+    width: 1em;
+}
+
+.box6 {
+    width: 1rem;
+    height: 100vh;
+}

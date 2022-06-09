@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>CSS Selectors</h1>
+        <nav>
+            <ol>
+                <li><a href="#universal-sel">Universal selector</a></li>
+                <li><a href="#type-sel">Type Selectors</a></li>
+                <li><a href="#id-sel">ID Selectors</a></li>
+                <li><a href="#class-sel">Class Selectors</a></li>
+                <li><a href="#attribute-sel">Attribute Selectors</a></li>
+            </ol>
+
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <div class="uni-sel">
+                <h4 id="universal-sel">Universal Selector</h4>
+
+                <div class="special-div">
+                    <p>Universal selectors: <code>* ns|* *|*</code></p>
+                    <code>
+                        * { style properties }
+                        
+                    </code>
+                    <p class=" warning">
+                        <span lang="en-us">A green span</span> in a red paragraph.
+                    </p>
+                    <p id="maincontent" lang="en-gb">
+                        <span class="warning">A red span</span> in a green paragraph.
+                    </p>
+
+                </div>
+            </div>
+            <div>
+                <h4 id="type-sel">Type Selector</h4>
+                <div>
+                    <p><code class="my-code bg-yellow">element { style properties } 
+                        </code></p>
+                    <p>elements: a, h1, p , etc</p>
+
+                    <span id="span-1">Here's a span with some text.</span>
+                    <p>Here's a p with some text.</p>
+                    <span>Here's a span with more text.</span>
+                </div>
+
+            </div>
+            <div>
+                <h4 id="id-sel">ID Selector</h4>
+                <div>
+                    <p><code class="my-code"> #id_value { style properties }
+                    </code></p>
+
+                    <div id="identified1">This div has a special ID on it!</div>
+                    <div>This is just a regular div.</div>
+
+                </div>
+
+            </div>
+            <div>
+                <h4 id="class-sel">Class Selector</h4>
+                <div>
+                    <p><code class="my-code"> .classname { style properties }
+                    </code></p>
+                    <div id="identified">This div has a special ID on it!</div>
+                    <div>This is just a regular div.</div>
+
+                </div>
+
+            </div>
+
+            <div>
+                <h4 id="attribute-sel">Attribute Selector</h4>
+                <div>
+                    <p><code class="my-code"> a[href^="#"]  { style properties }
+                    </code></p>
+                    <a href="#ext internal " name="sai-chandra">Internal link</a>
+                </div>
+
+            </div>
+        </section>
+        <section class="adjacent-sibling">
+            <h2> <span>+</span>Adjacent sibling</h2>
+            <div class="box">box-1</div>
+            <div class="box">box-2</div>
+            <a href="#">hi</a>
+            <div class="box">box-3</div>
+            <div class="box">box-4</div>
+        </section>
+
+        <section class="general-sibling">
+            <h2><span>~</span>General Sibling</h2>
+            <div class="box-gen">box-1</div>
+            <div class="box-gen">box-2</div>
+            <a href="#">hi</a>
+            <div class="box-gen">box-3</div>
+            <div class="box-gen">box-4</div>
+        </section>
+        <section>
+            <h4>Css selectors Direct children</h4>
+            <div>
+                <div class="my-dc">
+                    <p>p1</p>
+                    <p>p2</p>
+                    <div>
+                        <p>p3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

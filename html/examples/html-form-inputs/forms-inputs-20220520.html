@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms & Inputs</title>
+</head>
+
+<body>
+    <h1>HTML Forms & Inputs</h1>
+    <section>
+        <form name="registration-form" id="reg-form1">
+            <label for="first-name">First name:</label>
+            <input id="first-name" name="first-name" type="text" placeholder="Enter your first name">
+            <label for="last-name">Last name:</label>
+            <input id="last-name" name="last-name" type="text" value="test value">
+            <br>
+            <label for="age">Age: </label>
+            <input id="age" name='age' type="number" min="0" max="150" placeholder="Enter only numbers">
+            <br>
+
+
+            <label for="myemail">Email: </label>
+            <input id="myemail" name='email' type="email">
+            <label for="mypass">Password: </label>
+            <input id="mypass" name='pass' type="password">
+
+            <br>
+            <input type="button" value="Submit">
+            <input type="reset" value="Reset this form">
+            <p>
+            <h2>Favourate fruits:</h2>
+            <label for="mango">Mango </label>
+            <input name="fav-fruit" id="mango" type="checkbox">
+            <label for="apple">apple </label>
+            <input name="fav-fruit" id="apple" type="checkbox">
+            <label for="orange">orange </label>
+            <input name="fav-fruit" id="orange" type="checkbox">
+            </p>
+            <p>
+            <h2>Gender:</h2>
+            <label for="male">male </label>
+            <input value="M" name="gender" id="male" type="radio">
+            <label for="female">female </label>
+            <input value="F" name="gender" id="female" type="radio">
+            <label for="others">others </label>
+            <input value="O" name="gender" id="others" type="radio">
+            </p>
+            <p>
+                <input type="file" accept="image/png, image/jpeg">
+            </p>
+            <p>
+                <input type="color">
+            </p>
+            <p>
+            <h4>Your favourate subject</h4>
+            <select id="fav-books" name="fav-books">
+                <option value="m">Maths</option>
+                <option value="p">Physics</option>
+                <option value="c">Chemistry</option>
+                <option value="cs">CS</option>
+            </select>
+            </p>
+        </form>
+    </section>
+
+
+    <!-- {
+        "first-name":'raja',
+        "last-name":'ramesh',
+        "age":23,
+        "fav-books":'cs'
+        ...
+    } -->
+    <!-- <div style="background-color: yellow;">
+        <h1>HTML Forms & Inputs</h1>
+        <p>this is paragraph</p>
+        <img width="200px"
+            src="https://images.unsplash.com/photo-1572566830488-069bcc7fbcec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt="dog picture" />
+    </div>
+
+    <div style="background-color: lightgreen; margin:20px">
+
+        <img width="200px"
+            src="https://images.unsplash.com/photo-1572566830488-069bcc7fbcec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt="dog picture" />
+        <img width="200px"
+            src="https://images.unsplash.com/photo-1572566830488-069bcc7fbcec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt="dog picture" />
+        <img width="200px"
+            src="https://images.unsplash.com/photo-1572566830488-069bcc7fbcec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt="dog picture" />
+    </div> -->
+
+</body>
+
+</html>

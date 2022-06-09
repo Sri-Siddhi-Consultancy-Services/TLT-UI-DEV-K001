@@ -1,0 +1,28 @@
+#main-header {
+    background-color: yellow;
+    text-align: center;
+}
+
+#box1 {
+    /* flex-basis: 200px; */
+    background-color: #03045e;
+    flex-shrink: 1;
+    /* flex-grow: 1; */
+}
+
+#box2 {
+    background-color: #0077b6;
+}
+
+#box3 {
+    background-color: #00b4d8;
+}
+
+#box4 {
+    background-color: #90e0ef;
+}
+
+#box5 {
+    background-color: #caf0f8;
+    /* flex-grow: 1; */
+}
