@@ -127,8 +127,8 @@ Big Int
 String Data type
 */
 
-let string1 = "string 1"; // string literals
-let string2 = "string 2"; // string literals
+let string1 = "string 1"; // string literals - ''
+let string2 = "string 2"; // string literals - ""
 let string3 = `string 3`; // template literals
 let string4 = new String("string 4"); // using string object
 
@@ -181,3 +181,35 @@ console.log(helloworld.length);
 // access characters in string
 console.log(str1[3], str1[4]);
 console.log(str1.charAt(0), str1.charAt(3), str1.charAt(4));
+
+// more methods
+// console.log(str1.concat(' ', str2));
+//  var str1 = 'Cats are the best!';
+
+// console.log("str1.endsWith('best!'):" , str1.endsWith('best!'));
+
+const sentence = "The quick brown fox jumps over the lazy dog.";
+console.log("is dog word available in sentence: ", sentence.includes("date"));
+
+const acNumber = 313232323232;
+const acn2 = acNumber.toString()
+const subStr = acn2.substring(8);
+console.log(subStr);
+console.log(subStr.padStart(12, "x"));
+console.log(subStr.padEnd(12, "X"));
+
+const p =
+  "  The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?   ";
+
+console.log(p);
+console.log(p.replace("dog", "monkey"));
+console.log(p.replaceAll("dog", "monkey"));
+console.log(p.toLowerCase());
+console.log(p.toUpperCase());
+console.log(p.trim());
+
+const s1 = 'hello'
+const s2 = 'world'
+const myName = 'kumar'
+const newStr = `${s1} ${s2}, this is ${myName}` // s1 + " " + s2
+console.log("newStr: ", newStr)
