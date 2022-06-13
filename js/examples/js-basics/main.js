@@ -166,21 +166,21 @@ var stringEscapeChar = 'this is "important"';
 
 // concate two strigs
 
-var str1 = "hello";
-var str2 = "   world";
-var helloworld = str1 + str2;
-console.log(str1 + " @ " + str2);
-console.log(1 + 2 + str2);
-console.log(str2 + 1 + 2);
-var num1 = "1";
-var num2 = 2;
-console.log(num1 + num2);
+// var str1 = "hello";
+// var str2 = "   world";
+// var helloworld = str1 + str2;
+// console.log(str1 + " @ " + str2);
+// console.log(1 + 2 + str2);
+// console.log(str2 + 1 + 2);
+// var num1 = "1";
+// var num2 = 2;
+// console.log(num1 + num2);
 
-// check the length of the string
-console.log(helloworld.length);
-// access characters in string
-console.log(str1[3], str1[4]);
-console.log(str1.charAt(0), str1.charAt(3), str1.charAt(4));
+// // check the length of the string
+// console.log(helloworld.length);
+// // access characters in string
+// console.log(str1[3], str1[4]);
+// console.log(str1.charAt(0), str1.charAt(3), str1.charAt(4));
 
 // more methods
 // console.log(str1.concat(' ', str2));
@@ -188,28 +188,123 @@ console.log(str1.charAt(0), str1.charAt(3), str1.charAt(4));
 
 // console.log("str1.endsWith('best!'):" , str1.endsWith('best!'));
 
-const sentence = "The quick brown fox jumps over the lazy dog.";
-console.log("is dog word available in sentence: ", sentence.includes("date"));
+// const sentence = "The quick brown fox jumps over the lazy dog.";
+// console.log("is dog word available in sentence: ", sentence.includes("date"));
 
-const acNumber = 313232323232;
-const acn2 = acNumber.toString()
-const subStr = acn2.substring(8);
-console.log(subStr);
-console.log(subStr.padStart(12, "x"));
-console.log(subStr.padEnd(12, "X"));
+// const acNumber = 313232323232;
+// const acn2 = acNumber.toString()
+// const subStr = acn2.substring(8);
+// console.log(subStr);
+// console.log(subStr.padStart(12, "x"));
+// console.log(subStr.padEnd(12, "X"));
 
-const p =
-  "  The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?   ";
+// const p =
+//   "  The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?   ";
 
-console.log(p);
-console.log(p.replace("dog", "monkey"));
-console.log(p.replaceAll("dog", "monkey"));
-console.log(p.toLowerCase());
-console.log(p.toUpperCase());
-console.log(p.trim());
+// console.log(p);
+// console.log(p.replace("dog", "monkey"));
+// console.log(p.replaceAll("dog", "monkey"));
+// console.log(p.toLowerCase());
+// console.log(p.toUpperCase());
+// console.log(p.trim());
 
-const s1 = 'hello'
-const s2 = 'world'
-const myName = 'kumar'
-const newStr = `${s1} ${s2}, this is ${myName}` // s1 + " " + s2
-console.log("newStr: ", newStr)
+// const s1 = 'hello'
+// const s2 = 'world'
+// const myName = 'kumar'
+// const newStr = `${s1} ${s2}, this is ${myName}` // s1 + " " + s2
+// console.log("newStr: ", newStr)
+
+/* 
+Boolean 
+
+true, false
+
+*/
+
+/* 
+equal : variable == variable2, variable === variable2
+not :  !
+not equal : !=,  !==
+greater than : >
+less than: <
+greater than or equal to : >=
+less than or equal to : <=
+
+
+// null, undefined, false, 0
+// comparison check: true , 'hi', [], {}, 2
+
+*/
+
+// let isgreater = 2 > 3
+let isgreater = 2 < 3;
+
+let isMonday = true;
+let isTomorrowMonday = !isMonday;
+let a = 123;
+let b = "123";
+// let testBool = !a
+let testBool = !!a;
+let compareStr = a == b;
+// console.log(NaN == NaN)
+// console.log(Number('123w'))
+// console.log("boolean check", isMonday, typeof isMonday);
+// console.log("is tomorrow Monday check", isTomorrowMonday, typeof isTomorrowMonday);
+// console.log("testBool", testBool, typeof testBool)
+// console.log("compareStr is true : ", compareStr, typeof compareStr, b, typeof b)
+// console.log("compareStr is true : ", isgreater, typeof isgreater,)
+
+/* 
+Null 
+
+*/
+
+let age = null;
+
+/* 
+Undefined 
+
+*/
+
+let fname;
+
+// console.log("null and undefined:::", age, fname)
+
+/* 
+Object - 
+    - Arrays
+    - Functions
+    - Math
+    - Date
+    - Regex
+    - Number
+    - String
+   */
+
+/* create a new object */
+
+let myObj = {
+  fname: "kumar", // string
+  lname: "pedagopu", // string
+  isStudent: false, // bool
+  age: 32, // number
+  skill: ["js", "mysql", "css", "html"],
+  fullname: function () {
+    return this.fname + " " + this.lname;
+  },
+};
+// console.log("my obj: ", myObj, typeof myObj, myObj.fname);
+// console.log("myobj: ", myObj.fname, myObj.lname, myObj.fname +" "+ myObj.lname);
+console.log("myobj: ", myObj.fullname(), myObj.skill[1]);
+
+/* create an array */
+
+// fruits list , mango, apple, banana
+const str = "mango, apple, banana";
+let name = []; // array , type is object
+const fruits = ["mango", "apple", "banana", 12, myObj]; // array
+console.log(fruits[1], fruits[3])
+
+/*  Making Decissions , if else, switch    */
+
+/* Looping for, while loop */
