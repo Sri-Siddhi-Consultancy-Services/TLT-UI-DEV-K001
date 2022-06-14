@@ -295,7 +295,7 @@ let myObj = {
 };
 // console.log("my obj: ", myObj, typeof myObj, myObj.fname);
 // console.log("myobj: ", myObj.fname, myObj.lname, myObj.fname +" "+ myObj.lname);
-console.log("myobj: ", myObj.fullname(), myObj.skill[1]);
+// console.log("myobj: ", myObj.fullname(), myObj.skill[1]);
 
 /* create an array */
 
@@ -303,8 +303,77 @@ console.log("myobj: ", myObj.fullname(), myObj.skill[1]);
 const str = "mango, apple, banana";
 let name = []; // array , type is object
 const fruits = ["mango", "apple", "banana", 12, myObj]; // array
-console.log(fruits[1], fruits[3])
 
-/*  Making Decissions , if else, switch    */
+const fruits1 = {
+  0: "mango",
+  1: "apple",
+  2: "banana",
+};
+// console.log(fruits[0])
+// console.log(fruits1[0])
+// console.log(fruits1.1)
+// console.log(fruits[1], fruits[3])
 
-/* Looping for, while loop */
+/*  Making Decissions , if else, switch  
+
+if(condition1){
+
+}else if(condition2){
+
+}else {
+
+}
+
+switch(expression){
+  case 1 :
+    break
+  case 2 :
+    break
+  default :
+
+}
+
+*/
+let myMood = "horlics";
+myAge = 44;
+const MY_CONST = 5;
+// console.log(typeof myMood, myMood);
+
+if (myMood === "coffie") {
+  console.log("bring coffie");
+} else if (myMood.toLowerCase() === "tea" || myAge === 44) {
+  console.log("bring tea");
+} else if (myMood === "horlics" || myAge <= 32) {
+  console.log("bring horlics");
+  // return false
+} else if (myAge > 32 && myAge < 62) {
+  console.log("bring lemon water");
+} else if (myAge > 62) {
+  console.log("bring tablets");
+} else {
+  console.log("bring water");
+}
+// a = 2;
+// if (a > 3) console.log("a is greater than 3");
+// else console.log("a is less than 3");
+
+switch (myMood) {
+  case "coffie":
+    console.log("bring coffie");
+    break;
+  case "TEA":
+    console.log("bring tea");
+    break;
+  case "horlics":
+  case "boost":
+    console.log("bring horlics");
+  break;
+  default:
+    console.log("bring water");
+}
+
+/* Looping for, while, do while loop
+
+
+
+*/
