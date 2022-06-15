@@ -333,6 +333,8 @@ switch(expression){
 
 }
 
+ternary operator : condition ? execute if true : execute else case / false case
+
 */
 let myMood = "horlics";
 myAge = 44;
@@ -367,13 +369,77 @@ switch (myMood) {
   case "horlics":
   case "boost":
     console.log("bring horlics");
-  break;
+    break;
   default:
     console.log("bring water");
 }
 
+let gender = "f"; // 'f'
+const AGE = 26;
+let greetePerson =
+  gender === "m"
+    ? "Welcome super hero"
+    : AGE > 25
+    ? "super women"
+    : "Welcome super lady";
+// console.log(greetePerson);
+
+// if (gender === "m") {
+//   greetePerson = "Welcome super hero";
+//   console.log("if1", greetePerson);
+// } else {
+//   console.log("else1", greetePerson);
+
+//   greetePerson = "Welcome super lady1";
+//   console.log("else2", greetePerson);
+
+//   if (AGE > 25) {
+//     greetePerson = "Welcome super women";
+//     console.log("else3", greetePerson);
+//   }
+//   if (AGE > 18) {
+//     greetePerson = "Welcome super girl";
+//     console.log("else4", greetePerson);
+//   }
+// }
+
+// console.log(greetePerson);
+
 /* Looping for, while, do while loop
 
 
-
 */
+
+const fruits2 = ["mango", "apple", "orange", "grapes"]; // array , data type = object
+
+// console.log(fruits2[0]);
+// console.log(fruits2[1]);
+// console.log(fruits2[2]);
+console.log(fruits2.length);
+
+for (let i = 0; i < fruits2.length; i++) {
+  if (fruits2[i] === "apple") {
+    console.log("it's my favorite fruite");
+  }
+  if (fruits2[i] === "orange") {
+    break;
+  }
+  console.log(fruits2[i]);
+  for (let j = 0; j <= 1; j++) {
+    console.log("-");
+  }
+}
+
+// let count = 0;
+// while (count < 5) {
+//   count = count + 1;
+//   console.log("count : ", count);
+// }
+
+// do {
+//   console.log("first time : ", count);
+//   count = count + 1;
+// } while (count < 5);
+// {
+//   console.log("count : ", count);
+// }
