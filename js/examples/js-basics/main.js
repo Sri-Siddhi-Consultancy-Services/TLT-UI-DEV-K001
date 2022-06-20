@@ -341,38 +341,38 @@ myAge = 44;
 const MY_CONST = 5;
 // console.log(typeof myMood, myMood);
 
-if (myMood === "coffie") {
-  console.log("bring coffie");
-} else if (myMood.toLowerCase() === "tea" || myAge === 44) {
-  console.log("bring tea");
-} else if (myMood === "horlics" || myAge <= 32) {
-  console.log("bring horlics");
-  // return false
-} else if (myAge > 32 && myAge < 62) {
-  console.log("bring lemon water");
-} else if (myAge > 62) {
-  console.log("bring tablets");
-} else {
-  console.log("bring water");
-}
+// if (myMood === "coffie") {
+//   console.log("bring coffie");
+// } else if (myMood.toLowerCase() === "tea" || myAge === 44) {
+//   console.log("bring tea");
+// } else if (myMood === "horlics" || myAge <= 32) {
+//   console.log("bring horlics");
+//   // return false
+// } else if (myAge > 32 && myAge < 62) {
+//   console.log("bring lemon water");
+// } else if (myAge > 62) {
+//   console.log("bring tablets");
+// } else {
+//   console.log("bring water");
+// }
 // a = 2;
 // if (a > 3) console.log("a is greater than 3");
 // else console.log("a is less than 3");
 
-switch (myMood) {
-  case "coffie":
-    console.log("bring coffie");
-    break;
-  case "TEA":
-    console.log("bring tea");
-    break;
-  case "horlics":
-  case "boost":
-    console.log("bring horlics");
-    break;
-  default:
-    console.log("bring water");
-}
+// switch (myMood) {
+//   case "coffie":
+//     console.log("bring coffie");
+//     break;
+//   case "TEA":
+//     console.log("bring tea");
+//     break;
+//   case "horlics":
+//   case "boost":
+//     console.log("bring horlics");
+//     break;
+//   default:
+//     console.log("bring water");
+// }
 
 let gender = "f"; // 'f'
 const AGE = 26;
@@ -415,20 +415,20 @@ const fruits2 = ["mango", "apple", "orange", "grapes"]; // array , data type = o
 // console.log(fruits2[0]);
 // console.log(fruits2[1]);
 // console.log(fruits2[2]);
-console.log(fruits2.length);
+// console.log(fruits2.length);
 
-for (let i = 0; i < fruits2.length; i++) {
-  if (fruits2[i] === "apple") {
-    console.log("it's my favorite fruite");
-  }
-  if (fruits2[i] === "orange") {
-    break;
-  }
-  console.log(fruits2[i]);
-  for (let j = 0; j <= 1; j++) {
-    console.log("-");
-  }
-}
+// for (let i = 0; i < fruits2.length; i++) {
+//   if (fruits2[i] === "apple") {
+//     console.log("it's my favorite fruite");
+//   }
+//   if (fruits2[i] === "orange") {
+//     break;
+//   }
+//   // console.log(fruits2[i]);
+//   for (let j = 0; j <= 1; j++) {
+//     // console.log("-");
+//   }
+// }
 
 // let count = 0;
 // while (count < 5) {
@@ -443,3 +443,80 @@ for (let i = 0; i < fruits2.length; i++) {
 // {
 //   console.log("count : ", count);
 // }
+
+/* 
+Functions in Javascript ---
+Firstclass citizen 
+function declaration
+function expresions
+annonymous function
+arrow or fat arrow functions
+IIFE - immediatly invoked function expression
+*/
+
+// function declaration
+
+/* 
+addTwo numbers
+num1
+num2 
+sum = num1 + num1
+
+*/
+
+// function addTwoNumbers(num1, num2) {
+//   let sum = 0;
+//   sum = num1 + num2;
+//   return sum;
+// }
+
+const myObj2 = { name: "kumar" };
+
+function findSquare(number) {
+  return number * number;
+}
+// function expression
+
+const findCube = function (number) {
+  // return number * number * number;
+  return findSquare(number) * number;
+};
+
+console.log("findsquare", typeof findSquare);
+console.log("findCube", typeof findCube);
+
+// const myCube = findCube(3);
+// console.log("myCube", myCube);
+
+// const addTwoNums = function addTwoNumbers(num1, num2) {
+//   // let sum = 0;
+//   // sum = num1 + num2;
+//   // return sum;
+
+//   // let sum = num1 + num2
+//   // return sum
+
+//   return num1 + num2;
+// };
+// const addThirdNumber = function (num1, num2, num3, sai) {
+//   let sumOfTwoNums = sai(num1, num2);
+//   return sumOfTwoNums + num3;
+// };
+
+// // console.log("adding 2 and 3 = ", addTwoNums(23434, 2343));
+// console.log("adding 1, 2 and 3 = ", addThirdNumber(1, 2, 3, addTwoNums));
+
+// const myMathFuntions = {
+//   square: findSquare,
+//   cube: findCube,
+//   ten: 10,
+// };
+// // const myMathFuntions = {};
+// // myMathFuntions.square = findSquare;
+// // myMathFuntions.cube = findCube;
+
+// console.log("myMathFuntions", myMathFuntions);
+// console.log(myMathFuntions.ten);
+// console.log(myMathFuntions.cube(2));
+// console.log(" 2* 2: ", myMathFuntions.square(2));
+// console.log(" 3**3: ", myMathFuntions.cube(3));
