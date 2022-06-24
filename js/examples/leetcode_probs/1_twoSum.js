@@ -46,42 +46,46 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 3. sum first and second element
 4  check the sum is equal to given target
 5. if sum equal to target return array of indexs of first element and second element
-6. else repeat from step 1 with second elm index + 1
+6. else repeat from step 0 with second elm index + 1
 
 */
 
 function twoSum(nums, target) {
-  // nums: array of number, target:number
 
-  var startingIndex = 0;
-  var secElemIndex = startingIndex + 1;
-  var elem1 = nums[startingIndex];
-  var elem2 = nums[secElemIndex];
-  var sum = elem1 + elem2;
-  var isEqual = sum === target; // data type: boolean
-
-  if (isEqual) {
-    console.log("isEqual", [startingIndex, secElemIndex]);
-    return [startingIndex, secElemIndex];
-  } else {
-    secElemIndex += 1;
-
-    var elem1 = nums[startingIndex];
-    var elem2 = nums[secElemIndex];
-    var sum = elem1 + elem2;
-    var isEqual = sum === target; // data type: boolean
-
-    if (isEqual) {
-      console.log("isEqual", [startingIndex, secElemIndex]);
-      return [startingIndex, secElemIndex];
-    } else {
-      secElemIndex += 1;
-      // return [];
-    }
-
-    // return [];
-  }
 }
+
+// function twoSum(nums, target) { // using if and else
+//   // nums: array of number, target:number
+
+//   var startingIndex = 0;
+//   var secElemIndex = startingIndex + 1;
+//   var elem1 = nums[startingIndex];
+//   var elem2 = nums[secElemIndex];
+//   var sum = elem1 + elem2;
+//   var isEqual = sum === target; // data type: boolean
+
+//   if (isEqual) {
+//     console.log("isEqual", [startingIndex, secElemIndex]);
+//     return [startingIndex, secElemIndex];
+//   } else {
+//     secElemIndex += 1;
+
+//     var elem1 = nums[startingIndex];
+//     var elem2 = nums[secElemIndex];
+//     var sum = elem1 + elem2;
+//     var isEqual = sum === target; // data type: boolean
+
+//     if (isEqual) {
+//       console.log("isEqual", [startingIndex, secElemIndex]);
+//       return [startingIndex, secElemIndex];
+//     } else {
+//       secElemIndex += 1;
+//       // return [];
+//     }
+
+//     // return [];
+//   }
+// }
 
 var numArray = [2, 7, 11, 15];
 var target = 9;
