@@ -50,9 +50,65 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 
 */
 
-function twoSum(nums, target) {
-
+function twoSumOptimized(nums, target) {
+  // Input: nums = [2,7,11,15],  9
+  // Input: nums = [3, 2, 4] , target =6
+  const lenOfNums = nums.length;
+  const temp = {
+    // 3: 0,
+    // 2: 1,
+  };
+  for (let i = 0; i < lenOfNums; i++) {
+    const elem = nums[i];
+    // let diff = target - nums[i]; // 6 -3 = 3
+    // let diff = target - nums[i]; // 6 -2 = 4
+    let diff = target - elem; // 6 -4 = 2
+    if (temp[diff] >= 0) {
+      return [temp[diff], i]; // [ 1,2]
+    } else {
+      temp[elem] = i;
+    }
+  }
+  return result;
 }
+
+function twoSum(nums, target) {
+  const lenOfNums = nums.length;
+  for (let i = 0; i < lenOfNums; i++) {
+    for (let j = i + 1; j < lenOfNums; j++) {
+      if (nums[i] + nums[j] === target) {
+        return [i, j];
+      }
+    }
+  }
+  return result;
+}
+
+// function twoSum(nums, target) {
+//   // try with for loop
+//   const lenOfNums = nums.length;
+//   // let result = [];
+//   for (let i = 0; i < lenOfNums; i++) {
+//     console.log("outer for loop", i);
+//     for (let j = i + 1; j < lenOfNums; j++) {
+//       let el1 = nums[i];
+//       let el2 = nums[j];
+//       console.log("twosum: inner for loop => : ", {
+//         j,
+//         el1,
+//         el2,
+//         sum: el1 + el2,
+//         target,
+//       });
+//       if (el1 + el2 === target) {
+//         console.log("twosum: is true => : ", [i, j]);
+//         return [i, j];
+//         // result.push(i, j);
+//       }
+//     }
+//   }
+//   return result;
+// }
 
 // function twoSum(nums, target) { // using if and else
 //   // nums: array of number, target:number
@@ -93,6 +149,7 @@ var target = 9;
 // var result = twoSum([3, 2, 4], 6);
 // var result = twoSum([3,3], 6);
 // var result = twoSum(numArray, 13);
+var result = twoSum([100, 200, 300, 7, 8, 3, 3, 5, 4], 15);
 console.log("result: ", result);
 
 // const twoSum = (nums, target) => {
