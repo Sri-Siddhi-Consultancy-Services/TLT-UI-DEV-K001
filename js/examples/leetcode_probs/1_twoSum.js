@@ -55,9 +55,13 @@ function twoSumOptimized(nums, target) {
   // Input: nums = [3, 2, 4] , target =6
   const lenOfNums = nums.length;
   const temp = {
+    // name:value,
+    // key:value,
     // 3: 0,
     // 2: 1,
+    // name:'kumar'
   };
+  
   for (let i = 0; i < lenOfNums; i++) {
     const elem = nums[i];
     // let diff = target - nums[i]; // 6 -3 = 3
