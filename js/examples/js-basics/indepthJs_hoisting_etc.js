@@ -4,6 +4,7 @@ https://www.freecodecamp.org/news/javascript-execution-context-and-hoisting/
 https://www.javatpoint.com/javascript-execution-
 https://www.youtube.com/watch?v=Nt-qa_LlUH0
 https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide/In_depth
+https://dev.to/narottam04/how-javascript-works-visually-explained-269j
 https://zerotomastery.io/cheatsheets/javascript-cheatsheet-the-advanced-concepts/#JavaScriptEngine
 
 */
@@ -57,19 +58,23 @@ Variable and class declarations are also hoisted, so they too can be referenced 
 Note that doing so can lead to unexpected errors, and is not generally recommended.
 
 */
-// var greet = undefined;
-// var a = undefined;
-var greet = "hello";
 
-var a = function () {
-  console.log("func a is calling");
-};
+// let name1 = "sai";
+// function a() {
+//   // name1 = undefined
+//   // name2
+//   console.log("calling function a", fname);
+//   if (true) {
+//     let name1 = "raja";
+//     var name2 = "sekhar";
+//     console.log("name1", name1);
+//   }
 
-function b() {
-  console.log("func b is calling", "" + greet2 + greet);
-}
+//   console.log("name2", name2);
+//   console.log("name1", name1);
+// }
+// var fname = "sai123"; // var is global or functional scopee
 
-var greet2 = "hi";
+// // let , const block scoped
 
-a();
-b();
+// a();
