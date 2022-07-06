@@ -64,18 +64,19 @@ They will only get initialized when their lexical binding (assignment) is evalua
 
 */
 
+
 // *Note: JavaScript only hoists declarations, not initialisation*
 
-// var message;
 // console.log(message); // output : undefined
+// var message;
 // message = "The variable Has been hoisted";
+
+// hoist();
 
 // function hoist() {
 //   a = 20;
 //   var b = 100;
 // }
-
-// hoist();
 
 // console.log(a); // Accessible as a global variable outside hoist() function  Output: 20
 
