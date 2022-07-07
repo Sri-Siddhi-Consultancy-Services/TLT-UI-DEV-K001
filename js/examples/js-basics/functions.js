@@ -73,8 +73,11 @@ function addOne(myVar) {
 
 const factorial = (n) => {
   console.log("number: ", n);
-  if (n === 0) return 1;
-  else return n * factorial(n - 1);
+  if (n === 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
 };
 
 /* 
@@ -111,9 +114,9 @@ the outer function to complete some kind of routine or action.
 ref: https://developer.mozilla.org/en-US/docs/Glossary/Callback_function
 */
 
-function testCallBack(num, myFun) {
+function testCallBack(num, cb) {
   if (num === 3) {
-    myFun(num);
+    cb(num);
   } else {
     console.log("number is: ", num);
   }
