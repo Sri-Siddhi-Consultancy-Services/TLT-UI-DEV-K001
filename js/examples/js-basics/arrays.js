@@ -27,7 +27,7 @@ console.log("arrays...", { myNewArr, mysecondArray, myStrArr });
 Create a string from an array
 =============================================================
 */
-console.log("my fruits string...", fruitName.join());
+// console.log("my fruits string...", fruitName.join());
 
 // const str1 = 'Hello';
 // const str2 = 'World';
@@ -42,8 +42,36 @@ let myStr = "";
 for (let i = 0; i < 4; i++) {
   myStr = myStr + fruitName[i] + ",";
 }
-console.log("myStr", myStr);
+// console.log("myStr", myStr);
 
+function makeString(arr, separator) {
+  let sep = separator ? separator : ",";
+  // let list = [];
+  // for(let i=0; i < arr.lenghth; i++){
+  // list += (arr[i])
+  // }
+  // console.log(list.split(" ").toString())
+  // console.log(arr.toString());
+  let myStr = "";
+  for (let i = 0; i < arr.length; i++) {
+    // if (i !== 0) {
+    //   myStr += ",";
+    // }
+    // myStr = myStr + arr[i];
+    // myStr += arr[i];
+    /* 
+    // second method
+      // if (i !== arr.length-1) {
+      //   // myStr = myStr + ",";
+      //   myStr += ",";
+      // }
+     */
+    myStr += i !== 0 ? sep + arr[i] : arr[i]; // one line code
+  }
+  return myStr;
+}
+
+console.log(makeString(fruitName));
 // console.log("str3", str3);
 // console.log("str4", str4);
 
