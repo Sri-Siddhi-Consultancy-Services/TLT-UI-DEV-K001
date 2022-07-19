@@ -73,7 +73,7 @@ function makeString(arr, separator) {
   return myStr;
 }
 
-console.log(makeString(fruitName));
+// console.log(makeString(fruitName));
 // console.log("str3", str3);
 // console.log("str4", str4);
 
@@ -83,7 +83,7 @@ Access an array item by its index
 */
 
 const fruitName2 = ["mango", "apple", "orange", "grapes", "apple"];
-console.log(fruitName2[1]);
+// console.log(fruitName2[1]);
 
 /* 
 Find the index of an item in an array
@@ -93,22 +93,22 @@ Find the index of an item in an array
 const appIndex = fruitName2.findIndex(function (item) {
   return item === "apple";
 });
-console.log("appIndex: ", appIndex, fruitName2[appIndex]);
+// console.log("appIndex: ", appIndex, fruitName2[appIndex]);
 
 /* 
 Check if an array contains a certain item
 =============================================================
 */
-console.log("is apple available: ", fruitName2.includes("apple"));
+// console.log("is apple available: ", fruitName2.includes("apple"));
 
 /* 
 Append an item to an array
 =============================================================
 */
 fruitName2.push("banana");
-console.log("fruites", fruitName2);
+// console.log("fruites", fruitName2);
 fruitName2.unshift("pineapple");
-console.log("fruites", fruitName2);
+// console.log("fruites", fruitName2);
 /* 
 Remove the last item from an array
 =============================================================
@@ -116,11 +116,11 @@ Remove the last item from an array
 
 fruitName2.pop();
 fruitName2.pop();
-console.log("fruites", fruitName2);
+// console.log("fruites", fruitName2);
 fruitName2.shift();
 fruitName2.shift();
 fruitName2.shift();
-console.log("fruites", fruitName2);
+// console.log("fruites", fruitName2);
 
 /* 
 Array.prototype.filter()
@@ -130,31 +130,118 @@ Array.prototype.filter()
 const mynums = [1, 2, 3, 4, 5, 10, 15, 20, "hi", true, "hello"];
 const newArray = mynums.filter((item) => item < 5);
 
-console.log("newArray", mynums, newArray);
+// console.log("newArray", mynums, newArray);
 
 /* Array.prototype.forEach() */
 const myFunc = (n) => console.log(n);
 
-const myArr = ["a", 11, "raja", true, 13, myFunc];
 const myArr2 = [1, 2, 3, 4, 5];
+
+const myArr = ["a", 11, "raja", true, 13, myFunc];
+const myArr3 = myArr.forEach((item, index, array) => {
+  // console.log("item, index , array", {
+  //   val: item,
+  //   index,
+  //   array,
+  // });
+  return item;
+});
+console.log("##################################", myArr3);
+
+// const saiEach = (arr) => {
+//   for (let i = 0; i < arr.length; i++) {
+//     console.log("item, index , array", {
+//       val: arr[i],
+//       index: i,
+//       array: arr,
+//     });
+//   }
+// };
+// saiEach(myArr);
 // console.log(myArr);
 
-function myCallBack(element, index, arr) {
-  console.log("foreach", {
-    element,
-    index,
-    arr,
-  });
-}
+// function myCallBack(element, index, arr) {
+//   console.log("foreach", {
+//     element,
+//     index,
+//     arr,
+//   });
+// }
 
-function square(n) {
-  console.log(`${n} * ${n} = `, n * n);
-  return n * n;
-}
+// function square(n) {
+//   console.log(`${n} * ${n} = `, n * n);
+//   return n * n;
+// }
 
 // myArr.forEach(myCallBack);
 // myArr2.forEach(square);
 
 /* Array.prototype.map() */
+
+const myArr4 = myArr2.map((item, index, array) => {
+  // console.log("item, index , array", {
+  //   val: item,
+  //   index,
+  //   array,
+  // });
+  return item ** 3;
+});
+
+// console.log(
+//   "##################################",
+//   myArr4,
+//   myArr2,
+//   myArr2.length,
+//   myArr4.length
+// );
+
 // const mySquares = myArr2.map(square);
 // console.log("mySquares :", mySquares);
+
+/* 
+Array.prototype.reduce()
+*/
+
+const mySum = myArr2.reduce((prev, curr) => {
+  // console.log("myreduce func: ", {
+  //   prev,
+  //   curr,
+  // });
+  return prev + curr;
+}, 0);
+
+// console.log("##", {
+//   mySum,
+//   myArr2,
+// });
+/* 
+Array.prototype.reverse()
+ */
+
+console.log(myArr2);
+// console.log(myArr2.reverse());
+// console.log(myArr2);
+// const myArr2Rev =  []
+
+/* 
+Array.prototype.slice()
+*/
+const myNewSlice = myArr2.slice(1, 3);
+
+// console.log(myNewSlice);
+// console.log(myArr2.slice());
+// console.log(myArr2);
+/* 
+Array.prototype.splice()
+*/
+// myArr2.splice(1, 2);
+// console.log(myArr2);
+
+/* 
+Array.prototype.find()
+*/
+console.log(myArr2.find((num) => num > 2));
+
+/* 
+Array.prototype.sort()
+*/
