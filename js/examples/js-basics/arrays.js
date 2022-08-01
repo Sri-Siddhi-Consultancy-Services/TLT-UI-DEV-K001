@@ -146,7 +146,7 @@ const myArr3 = myArr.forEach((item, index, array) => {
   // });
   return item;
 });
-console.log("##################################", myArr3);
+// console.log("##################################", myArr3);
 
 // const saiEach = (arr) => {
 //   for (let i = 0; i < arr.length; i++) {
@@ -218,7 +218,7 @@ const mySum = myArr2.reduce((prev, curr) => {
 Array.prototype.reverse()
  */
 
-console.log(myArr2);
+// console.log(myArr2);
 // console.log(myArr2.reverse());
 // console.log(myArr2);
 // const myArr2Rev =  []
@@ -240,8 +240,30 @@ Array.prototype.splice()
 /* 
 Array.prototype.find()
 */
-console.log(myArr2.find((num) => num > 2));
+// console.log(myArr2.find((num) => num > 2));
 
 /* 
 Array.prototype.sort()
 */
+
+const months = ["March", "Jan", "Feb", "Dec"];
+const array1 = [1, 30, 4, 21, 100000];
+const numbers = [4, 2, 5, 1, 3];
+
+// console.log(months.sort());
+// months.pop();
+// console.log(array1.sort((a, b) => b - a));
+// console.log(numbers.sort((a, b) => a - b));
+// console.log("array1", array1);
+
+// 1, 0 , -1
+// val > 0, val == 0, val < 0
+
+const month2 = months;
+// month2.push(24);
+
+let myVar = 5;
+let myVar2 = myVar;
+myVar2 = 10;
+
+console.log("object ref testing: ", { month2, months, myVar, myVar2 });
